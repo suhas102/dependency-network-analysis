@@ -1,0 +1,5 @@
+depends_on_slower,supports,needs_recovery_h,dependency_rto_h
+Customer order capture,Order management system,1,2
+Payment authorisation,Order management system,1,2
+Stock allocation,Key stock data supplier feed,2,4
+Pick and pack,Regional DC - North,4,8

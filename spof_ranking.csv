@@ -1,0 +1,15 @@
+component,type,owner,location,rto_hours,dependants,components_impacted,steps_down,breaks_root_process,out_degree_deps,priority
+Cloud hosting region A,infrastructure,Tech,external,1,10,10,4,True,0,"1 - SPOF, 3rd party"
+Core network / WAN,infrastructure,Tech,internal,1,9,9,4,True,0,"2 - SPOF, internal"
+Identity / SSO service,infrastructure,Tech,external,1,5,5,2,True,0,"1 - SPOF, 3rd party"
+Stock system,system,Supply Chain,internal,2,4,4,2,True,2,"2 - SPOF, internal"
+Order management system,system,Digital,internal,2,3,3,2,True,2,"2 - SPOF, internal"
+Website / app,system,Digital,internal,1,2,2,1,True,2,"2 - SPOF, internal"
+Warehouse management system,system,Supply Chain,internal,4,2,2,1,True,2,"2 - SPOF, internal"
+Payment gateway (3rd party),system,Finance,external,1,2,2,1,True,1,"1 - SPOF, 3rd party"
+Regional DC - North,site,Supply Chain,internal,8,2,2,1,True,1,"2 - SPOF, internal"
+Handheld scanner platform,system,Ops,external,4,2,2,1,True,1,"1 - SPOF, 3rd party"
+Key stock data supplier feed,supplier,Supply Chain,external,4,2,2,1,True,0,"1 - SPOF, 3rd party"
+Carrier A (3rd party),supplier,Ops,external,4,2,0,0,False,0,4 - monitor
+Carrier B (3rd party),supplier,Ops,external,4,2,0,0,False,0,4 - monitor
+Regional DC - South,site,Supply Chain,internal,8,0,0,0,False,0,4 - monitor
